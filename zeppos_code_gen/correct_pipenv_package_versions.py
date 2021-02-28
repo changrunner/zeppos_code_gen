@@ -6,7 +6,7 @@ def main():
     with open(pipfile, 'r') as fl:
         content = fl.readlines()
 
-    p = Popen(['commit_to_git.sh'], stdout=PIPE, stderr=PIPE)
+    p = Popen(['./commit_to_git.sh'], stdout=PIPE, stderr=PIPE)
     out, err = p.communicate()
 
     print(out)
